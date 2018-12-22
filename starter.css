@@ -1,5 +1,4 @@
 /* OVERRIDES */
-
 a, p, blockquote, h1, h2, h3, h4, h5, h6 {
 	color: inherit;
 	font-weight: normal;
@@ -46,31 +45,13 @@ strong, b {
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
-
-
-/*	BODY  */
-body {
-	background-color: #704214;
-	color: black;
-	font-family: Oswald, sans-serif;
-	line-height: 1.4;
-}
-
-
-/*	MAIN SECTION */
-
-/*	MAIN SECTION BOX */
-main {
-}
-
-
-/*	MAIN SECTION CONTAINING INVENTORY */
+/* MAIN SECTION CONTAINING INVENTORY */
 #inventory {
 	margin: 25px auto 50px;
 	width: 900px;
 }
 
-/*	Inventory item box */
+/* Inventory item box */
 .item {
 	float: left;
 	margin: 10px;
@@ -79,22 +60,17 @@ main {
 	background-color: #ee0;
 }
 
-/*	Inventory item box change on hover */
+/* Inventory item box change on hover */
 .item:hover {
-	cursor: pointer;
 }
 
-/*	Inventory item image */
+/* Inventory item image */
 .item figure {
 	width: 160px;
 	height: 160px;
 }
 
-/*	Inventory item image change on item box hover */
-.item:hover figure {
-}
-
-/*	Inventory item caption */
+/* Inventory item caption */
 .item figcaption {
 	float: right;
 	margin: -12px -8px 0 0;
@@ -104,20 +80,20 @@ main {
 	color: #704214;
 }
 
-/*	Inventory item caption change on item box hover */
+/* Inventory item caption change on item box hover */
 .item:hover figcaption {
 	background-color: #704214;
 	color: white;
 }
 
 
-/*	MAIN SECTION CONTAINING MAIN TEXT */
+/* MAIN SECTION CONTAINING MAIN TEXT */
 #description {
 	margin: auto;
 	width: 600px;
 }
 
-/*	Title of main text */
+/* Title of main text */
 #description h2 {
 	margin: 1.5rem 0;
 	text-align: center;
@@ -126,20 +102,14 @@ main {
 	color: #704214;
 }
 
-/*	Main text box */
-article {
-}
-
-/*	Main text paragraphs */
+/* Main text paragraphs */
 article p {
 	margin: 0.5rem 0;
-	text-align: justify;
-	font-family: Merriweather, serif;
 }
 
-/*	OTHER ASSETS */
+/* OTHER ASSETS */
 
-/*	Without major explanation, the element this styles should go at the end
+/* Without major explanation, the element this styles should go at the end
 	of any set of elements set to float:left or float:right ;
 	it makes the container holding the floating elements behave intuitively
 	by taking up space (normally floating elements act like ghosts) */
@@ -199,14 +169,21 @@ article p {
 --------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------- */
 
-/*--------------------Overall--------------------*/
+/*-------------------- Overall --------------------*/
+:root {
+  --primary-typeface: alegreya;
+  --secondary-typeface: lato;
+}
 
 body {
   background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	font-family: 'alegreya', serif;
+	font-family: var(--primary-typeface);
+  background-color: #704214;
+  background-image: url("images/world_map_updated.jpg");
+	line-height: 1.4;
 }
 
 h1 {
@@ -224,7 +201,7 @@ h5 {
 }
 
 p {
-  font-family: 'lato', sans-serif;
+  font-family: var(--secondary-typeface);
 }
 
 ol, li {
@@ -233,7 +210,6 @@ ol, li {
 
 .nav-3:hover {
   text-decoration: underline;
-	cursor: pointer;
 }
 
 figcaption {
@@ -249,17 +225,21 @@ hr {
   width: 75%;
 }
 
+.interactive {
+  cursor: pointer;
+}
+
 
 /*----------------------------------------*/
-/*--------------------HEADER--------------------*/
+/*-------------------- HEADER --------------------*/
 /*----------------------------------------*/
 
-/*	Header box */
+/* Header box */
 header {
 	margin-top: 75px;
 }
 
-/*	Title in header */
+/* Title in header */
 #site-title {
 	margin: 25px;
 	text-align: center;
@@ -269,7 +249,7 @@ header {
 
 
 /*----------------------------------------*/
-/*--------------------NAVIGATION--------------------*/
+/*-------------------- NAVIGATION --------------------*/
 /*----------------------------------------*/
 
 /* Logo */
@@ -323,7 +303,7 @@ header {
 	font-size: 12px;
 	line-height: 32px;
 	padding: 0 15px;
-	font-family: Lato;
+	font-family: var(--secondary-typeface);
 	font-weight: bold;
 }
 
@@ -379,7 +359,7 @@ header {
 
 
 /*----------------------------------------*/
-/*--------------------EL MAPA --------------------*/
+/*-------------------- EL MAPA --------------------*/
 /*----------------------------------------*/
 #USA-map {
   background-image: url("images/USA_map-lightened.png");
@@ -405,12 +385,15 @@ header {
 	font-size: 11pt;
 	text-align: center;
 	font-weight: bold;
-	text-shadow: 0px 1px 2px rgba(0, 0, 0, .25)
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, .25);
+  transition: .25s ease-in-out;
+  transform: scale(1);
 }
 
 .map-name:hover {
-  cursor: pointer;
-	font-size: 12pt;
+	/*font-size: 12pt;*/
+  transform: scale(1.15);
+  transition: .25s ease-in-out;
 }
 
 #sinkhole-map-name {
@@ -420,7 +403,8 @@ header {
 	margin: -2em;
 }
 
-.USA-sinkhole {background-position: -990px 0px;
+.USA-sinkhole {
+  background-position: -990px 0px;
 }
 
 #foxes-map-name {
@@ -568,47 +552,45 @@ header {
 
 
 /*----------------------------------------*/
-/*--------------------Contents--------------------*/
+/*-------------------- Contents --------------------*/
 /*----------------------------------------*/
 #main-contents {
   font-size: 18pt;
-	font-family: alegreya;
+	font-family: var(--primary-typeface);
 	clear: both;
 }
 
 #contents {
   font-size: 14pt;
-	font-family: alegreya;
+	font-family: var(--primary-typeface);
 	clear: both;
 }
 
 .ToC-title-main {
   font-size: 14pt;
-	font-family: lato;
+	font-family: var(--secondary-typeface);
 }
 
 .ToC-title-main:hover {
   text-decoration: underline;
-	cursor: pointer;
 }
 
 .ToC-title {
   font-size: 12pt;
-	font-family: lato;
+	font-family: var(--secondary-typeface);
 }
 
 .ToC-title:hover {
   text-decoration: underline;
-	cursor: pointer;
 }
 
 
 /*----------------------------------------*/
-/*--------------------About--------------------*/
+/*-------------------- About --------------------*/
 /*----------------------------------------*/
 /*turn image into checkbox so you can change back and forth with each click*/
 #about-1 {
-  background-image: url('images/sprite-maps/Bamboo_Forest_s-map.jpg');
+  background-image: url("images/sprite-maps/Bamboo_Forest_s-map.jpg");
 	display: block;
 	height: 400px;
 	width: 527.6px;
@@ -639,19 +621,19 @@ header {
 }
 
 /*----------------------------------------*/
-/*--------------------Bestiary--------------------*/
+/*-------------------- Bestiary --------------------*/
 /*----------------------------------------*/
 
 table, th, td {
   border: 5px solid black;
-	font-family: alegreya;
+	font-family: var(--primary-typeface);
 	padding: 5px;
 	vertical-align: middle;
 	background-color: rgba(255, 255, 255, .5);
 }
 
 th {
-  font-family: lato;
+  font-family: var(--secondary-typeface);
 }
 
 table {
@@ -680,12 +662,10 @@ td img {
 
 .bestiary-img:hover {
   background-position: -200px 0px;
-	cursor: pointer;
 }
 
 .bestiary-name:hover, .name:hover {
   text-decoration: underline;
-	cursor: pointer;
 }
 
 .bestiary-txt {
@@ -715,7 +695,7 @@ td img {
 
 
 /*----------------------------------------*/
-/*--------------------Shops--------------------*/
+/*-------------------- Shops --------------------*/
 /*----------------------------------------*/
 .shops-img {
   height: 250px;
@@ -729,7 +709,6 @@ td img {
 
 .shops-img:hover {
   background-position: -300px 0px;
-cursor: pointer;
 }
 
 #bamboo-hut {
@@ -745,7 +724,7 @@ cursor: pointer;
 }
 
 /*----------------------------------------*/
-/*--------------------People--------------------*/
+/*-------------------- People --------------------*/
 /*----------------------------------------*/
 
 .people-img {
@@ -760,7 +739,6 @@ cursor: pointer;
 
 .people-img:hover {
   background-position: -200px 0px;
-	cursor: pointer;
 }
 
 #cambodian-dude {
@@ -786,13 +764,12 @@ li.name {
 }
 
 /*----------------------------------------*/
-/*--------------------Gallery--------------------*/
+/*-------------------- Gallery --------------------*/
 /*----------------------------------------*/
 .gallery {
 }
 
 .gallery:hover {
-  cursor: pointer;
 }
 
 .gallery figcaption{
@@ -853,7 +830,7 @@ li.name {
 
 
 /*----------------------------------------*/
-/*--------------------Misc--------------------*/
+/*-------------------- Misc --------------------*/
 /*----------------------------------------*/
 
 #misc-txt {
@@ -862,9 +839,9 @@ li.name {
 
 
 /*----------------------------------------*/
-/*--------------------FOOTER--------------------*/
+/*-------------------- FOOTER --------------------*/
 /*----------------------------------------*/
-/*	Main box */
+/* Main box */
 footer {
 	margin: 50px auto;
 	border-top: solid 8px #704214;
@@ -872,7 +849,7 @@ footer {
 	width: 800px;
 }
 
-/*	Social media icons box */
+/* Social media icons box */
 #social-set {
 	float: right;
 	border: solid 1px #704214;
@@ -892,10 +869,9 @@ footer {
 	margin: 0;
 	width: 30px;
 	height: 30px;
-	cursor: pointer;
 }
 
-/*	Extra box in footer */
+/* Extra box in footer */
 #foot-note {
 	margin: 0 0px;
 	padding: 0px;
