@@ -1,19 +1,19 @@
-/*	OVERRIDES */
+/* OVERRIDES */
 
 a, p, blockquote, h1, h2, h3, h4, h5, h6 {
 	color: inherit;
 	font-weight: normal;
 	font-style: normal;
 	text-decoration: none;
-	}
+}
 
 em, i {
 	font-style: italic;
-	}
+}
 
 strong, b {
 	font-weight: bold;
-	}
+}
 
 /* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
@@ -48,28 +48,27 @@ strong, b {
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
 
-/*	BODY; overall standards to apply to everything to start */
-
+/*	BODY  */
 body {
 	background-color: #704214;
 	color: black;
 	font-family: Oswald, sans-serif;
 	line-height: 1.4;
-	}
+}
 
 
 /*	MAIN SECTION */
 
 /*	MAIN SECTION BOX */
 main {
-	}
+}
 
 
 /*	MAIN SECTION CONTAINING INVENTORY */
 #inventory {
 	margin: 25px auto 50px;
 	width: 900px;
-	}
+}
 
 /*	Inventory item box */
 .item {
@@ -78,20 +77,22 @@ main {
 	width: 160px;
 	height: 160px;
 	background-color: #ee0;
-	}
+}
+
 /*	Inventory item box change on hover */
 .item:hover {
 	cursor: pointer;
-	}
+}
 
 /*	Inventory item image */
 .item figure {
 	width: 160px;
 	height: 160px;
-	}
+}
+
 /*	Inventory item image change on item box hover */
 .item:hover figure {
-	}
+}
 
 /*	Inventory item caption */
 .item figcaption {
@@ -101,19 +102,20 @@ main {
 	width: min-content;
 	background-color: white;
 	color: #704214;
-	}
+}
+
 /*	Inventory item caption change on item box hover */
 .item:hover figcaption {
 	background-color: #704214;
 	color: white;
-	}
+}
 
 
 /*	MAIN SECTION CONTAINING MAIN TEXT */
 #description {
 	margin: auto;
 	width: 600px;
-	}
+}
 
 /*	Title of main text */
 #description h2 {
@@ -122,17 +124,18 @@ main {
 	text-transform: uppercase;
 	letter-spacing: 0.5rem;
 	color: #704214;
-	}
+}
 
 /*	Main text box */
 article {
-	}
+}
+
 /*	Main text paragraphs */
 article p {
 	margin: 0.5rem 0;
 	text-align: justify;
 	font-family: Merriweather, serif;
-	}
+}
 
 /*	OTHER ASSETS */
 
@@ -147,13 +150,11 @@ article p {
 	padding: 0;
 	width: 0;
 	height: 0;
-	}
+}
 
 
 
 
-
-/*	NEW ADDITIONS - da real stuff */
 
 /* -----------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------
@@ -200,703 +201,706 @@ article p {
 
 /*--------------------Overall--------------------*/
 
-		body { background-attachment: fixed;
-				background-repeat: no-repeat;
-				background-size: cover;
-				background-position: center;
-				font-family: 'alegreya', serif;
-		}
+body {
+  background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	font-family: 'alegreya', serif;
+}
 
-		h1 {font-weight: bold;
-			}
+h1 {
+  font-weight: bold;
+}
 
-		h1, h2, h3, h4, h5, h6, ol, ul, p {color: white;
-											padding-left: 200px;
-											padding-right: 200px;
-		}
+h1, h2, h3, h4, h5, h6, ol, ul, p {
+  color: white;
+	padding-left: 200px;
+	padding-right: 200px;
+}
 
-		h5 {font-size: 18pt;
-		}
+h5 {
+  font-size: 18pt;
+}
 
-		p {font-family: 'lato', sans-serif;
-		}
+p {
+  font-family: 'lato', sans-serif;
+}
 
-		ol, li {display: list-item;
-		}
+ol, li {
+  display: list-item;
+}
 
-		.nav-3:hover {text-decoration:underline;
-						cursor: pointer;
-		}
+.nav-3:hover {
+  text-decoration: underline;
+	cursor: pointer;
+}
 
-		figcaption {color: white;
-		}
+figcaption {
+  color: white;
+}
 
-		.section-name {clear: both;
-						font-size: 28pt;
-		}
+.section-name {
+  clear: both;
+	font-size: 28pt;
+}
 
-		hr{width: 75%;
-		}
+hr {
+  width: 75%;
+}
 
 
 /*----------------------------------------*/
 /*--------------------HEADER--------------------*/
 /*----------------------------------------*/
 
-	/*	Header box */
-		header {
-			margin-top: 75px;
-			}
-	/*	Title in header */
-		#site-title {
-			margin: 25px;
-			text-align: center;
-			font-size: 3rem;
-			color: #0be;
-			}
+/*	Header box */
+header {
+	margin-top: 75px;
+}
+
+/*	Title in header */
+#site-title {
+	margin: 25px;
+	text-align: center;
+	font-size: 3rem;
+	color: #0be;
+}
 
 
 /*----------------------------------------*/
 /*--------------------NAVIGATION--------------------*/
 /*----------------------------------------*/
 
-	/* logo */
-		#logo {position: fixed;
-				left: 30px;
-				background-color:rgba(0,0,0,0.5);
-				width: 100%;
-		}
+/* Logo */
+#logo {
+  position: fixed;
+	left: 30px;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+}
 
-	/*heart emblem*/
-		#heart {float: left;
-				background-image: url("images/sprite-maps/Pandora_Box_s-map.png");
-				background-size: 150px 75px;
-				width: 75px;
-				height: 75px;
-				margin: 0px 10px;
-		}
+/* Heart emblem */
+#heart {float: left;
+	background-image: url("images/sprite-maps/Pandora_Box_s-map.png");
+	background-size: 150px 75px;
+	width: 75px;
+	height: 75px;
+	margin: 0px 10px;
+}
 
-		#heart:hover {background-position: -75px;
-		}
+#heart:hover {
+  background-position: -75px;
+}
 
+/* New drop-down navigation */
+#primary_nav_wrap {
+  position: fixed;
+		top: 13px;
+		left: 50%;
+		transform: translate(-50%, 0);
+	border: 3px groove #704214;
+	padding: 5px;
+	width: 720px;
+	z-index: 10;
+	background-color: rgb(214, 204, 169);
+	font-weight: bold;
+}
 
-	/*
-	/*	Navigation box
-		#site-nav {
-			position: fixed;
-				top: 0;
-				left: 50%;
-				transform: translate(-50%, 0);
-			border: 1px solid #704214;
-			background-color: none;
-			padding: 5px;
-			width: 840px;
-			z-index: 10;
-			}
+#primary_nav_wrap ul {
+	list-style: none;
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
 
-	/*	Inner navigation box
-		#nav-links {
-			}
+#primary_nav_wrap ul a {
+	display: block;
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 32px;
+	padding: 0 15px;
+	font-family: Lato;
+	font-weight: bold;
+}
 
-	/*	Navigation links
-		#site-nav a {
-			display: block;
-			float: left;
-			margin: 5px;
-			padding: 5px;
-			width: 100px;
-			background-color: white;
-			color: #704214;
-			}
+#primary_nav_wrap ul li {
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
 
-	/*	Navigation links change on hover
-		#site-nav a:hover {
-			cursor: pointer;
-			background-color: #704214;
-			color: white;
-			}
-	*/
+#primary_nav_wrap ul li.current-menu-item {
+}
 
-	/* new drop-down navigation */
-		#primary_nav_wrap {position: fixed;
-								top: 13px;
-								left: 50%;
-								transform: translate(-50%, 0);
-							border: 3px groove #704214;
-							padding: 5px;
-							width: 720px;
-							z-index: 10;
-							background-color: rgb(214, 204, 169);
-							font-weight: bold;
-		}
+#primary_nav_wrap ul li:hover {
+	background: #f6f6f6;
+}
 
-		#primary_nav_wrap ul {
-			list-style:none;
-			position:relative;
-			float:left;
-			margin:0;
-			padding:0
-		}
+#primary_nav_wrap ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #fff;
+	padding: 0;
+}
 
-		#primary_nav_wrap ul a {
-			display:block;
-			color:#333;
-			text-decoration:none;
-			font-weight:bold;
-			font-size:12px;
-			line-height:32px;
-			padding:0 15px;
-			font-family: Lato;
-			font-weight: bold;
-		}
+#primary_nav_wrap ul ul li {
+	float: none;
+	width: 200px;
+}
 
-		#primary_nav_wrap ul li {
-			position:relative;
-			float:left;
-			margin:0;
-			padding:0
-		}
+#primary_nav_wrap ul ul a {
+	line-height: 120%;
+	padding: 10px 15px;
+}
 
-		#primary_nav_wrap ul li.current-menu-item {
-		}
+#primary_nav_wrap ul ul ul {
+	top: 0;
+	left: 100%;
+}
 
-		#primary_nav_wrap ul li:hover {
-			background:#f6f6f6;
-		}
+#primary_nav_wrap ul li:hover > ul {
+	display: block
+}
 
-		#primary_nav_wrap ul ul {
-			display:none;
-			position:absolute;
-			top:100%;
-			left:0;
-			background:#fff;
-			padding:0
-		}
-
-		#primary_nav_wrap ul ul li {
-			float:none;
-			width:200px
-		}
-
-		#primary_nav_wrap ul ul a {
-			line-height:120%;
-			padding:10px 15px
-		}
-
-		#primary_nav_wrap ul ul ul {
-			top:0;
-			left:100%
-		}
-
-		#primary_nav_wrap ul li:hover > ul {
-			display:block
-		}
-
-	/* search bar */
-		#search-bar {float: right;
-						position: fixed;
-							top: 25px;
-							right: 50px;
-		}
+/* Search bar */
+#search-bar {
+  float: right;
+	position: fixed;
+  	top: 25px;
+		right: 50px;
+}
 
 
 /*----------------------------------------*/
-/*--------------------EL MAPA - WHY DO I MAKE LIFE SO HARD???--------------------*/
+/*--------------------EL MAPA --------------------*/
 /*----------------------------------------*/
+#USA-map {
+  background-image: url("images/USA_map-lightened.png");
+	height: 561px;
+	width: 990px;
+	background-size: 990px 561px;
+	margin: auto;
+}
 
-		/*
-		background-position: x%, y% ==>
-		The first value is the horizontal position and the second value is the vertical.
-		The top left corner is 0% 0%. The right bottom corner is 100% 100%.
-		If you only specify one value, the other value will be 50%.
-		Default value is: 0% 0%
-		*/
+#USA_s-map {
+  background-image: url("images/sprite-maps/USA_s-map.png");
+  height: 561px;
+  width: 990px;
+  background-size: 2970px 2805px;
+  margin: auto;
+}
 
-		/* don't you just love when you change your navigation bar and it shifts all of your perfectly placed labels down? */
-		/* that wtf moment when you realize you will have to manually adjust each individual name because adjusting the
-		class' position will not work for you */
+/* Map labels - general */
+.map-name {
+  text-transform: uppercase;
+	color: #704214;
+	position: absolute;
+	font-size: 11pt;
+	text-align: center;
+	font-weight: bold;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, .25)
+}
 
+.map-name:hover {
+  cursor: pointer;
+	font-size: 12pt;
+}
 
-		/* originally 3300â€†Ã—â€†1870 ==> divide by 3.33333333 */
-		#USA-map {background-image: url("images/USA_map-lightened.png");
-					height: 561px;
-					width: 990px;
-					background-size: 990px 561px;
-					margin: auto;
-		}
+#sinkhole-map-name {
+  left: 980px;
+	bottom: 242px;
+	padding: 2em;
+	margin: -2em;
+}
 
-		/* originally 9900â€†Ã—â€†9352 (idk why it's not 9350) ==> h=2805, w=2970 */
-		#USA_s-map {background-image: url("images/sprite-maps/USA_s-map.png");
-					height: 561px;
-					width: 990px;
-					background-size: 2970px 2805px;
-					margin: auto;
-		}
+.USA-sinkhole {background-position: -990px 0px;
+}
 
-	/*map labels - general*/
-		.map-name {text-transform: uppercase;
-					color: #704214;
-					position: absolute;
-					font-size: 11pt;
-					text-align: center;
-					font-weight: bold;
-					text-shadow: 0px 1px 2px rgba(0, 0, 0, .25)
-		}
+#foxes-map-name {
+  left: 935px;
+	bottom: 191px;
+	padding: 2em;
+	margin: -2em;
+}
 
-		.map-name:hover {cursor: pointer;
-							font-size: 12pt;
-		}
-		/* it doesn't like it when i tried to make the text shift left upon hovering to compensate for it shifting to
-		the right when it goes from 11pt to 12pt - whatever */
+.USA-foxes {
+  background-position: -1980px 0px;
+}
 
-   	/*map labels - specific*/
-   			/* position:absolute => The element is positioned relative to its first positioned (not static) ancestor element*/
-   			/* properties (can be +/-) = left:, right:, top:, bottom: */
-   			/* I DON'T UNDERSTAND WHY THESE VALUES ARE SO BIG - MY IMAGE IS ONLY 990 x 561 !!! */
-   			/* okay, let's try shifting everything up by 77px - ay, it works! */
-   		#sinkhole-map-name {left: 980px;
-   							/*bottom: 165px;*/
-   							bottom: 242px;
-   							padding: 2em;
-							margin: -2em;
-   		}
+#bamboo-map-name {
+  left: 857px;
+	bottom: 79px;
+	padding: 2em;
+	margin: -2em;
+}
 
-			.USA-sinkhole {background-position: -990px 0px;
-			}
+.USA-bamboo {
+  background-position: 0px -561px;
+}
 
-		#foxes-map-name {left: 935px;
-							/*bottom: 114px;*/
-							bottom: 191px;
-   							padding: 2em;
-							margin: -2em;
-   		}
+#caves-map-name {
+  left: 780px;
+	bottom: 1px;
+	padding: 2em;
+	margin: -2em;
+}
 
-			.USA-foxes {background-position: -1980px 0px;
-			}
+.USA-caves {
+  background-position: -990px -561px;
+}
 
-		#bamboo-map-name {left: 857px;
-							/*bottom: 2px;*/
-							bottom: 79px;
-   							padding: 2em;
-							margin: -2em;
-   		}
+#global-map-name {
+  left: 975px;
+	bottom: -73px;
+	padding: 2em;
+	margin: -2em;
+}
 
-			.USA-bamboo {background-position: 0px -561px;
-			}
+.USA-global {
+  background-position: -1980px -561px;
+}
 
-		#caves-map-name {left: 780px;
-							/*bottom: -76px;*/
-							bottom: 1px;
-   							padding: 2em;
-							margin: -2em;
-   		}
+#wasteland-map-name {
+  left: 590px;
+	bottom: -30px;
+	padding: 2em;
+	margin: -2em;
+}
 
-			.USA-caves {background-position: -990px -561px;
-			}
+.USA-wasteland {
+  background-position: 0px -1122px;
+}
 
-		#global-map-name {left: 975px;
-							/*bottom: -150px;*/
-							bottom: -73px;
-   							padding: 2em;
-							margin: -2em;
-   		}
+#sacred-map-name {
+  left: 659px;
+	bottom: 89px;
+	padding: 2em;
+	margin: -2em;
+}
 
-			.USA-global {background-position: -1980px -561px;
-			}
+.USA-sacred {
+  background-position: -990px -1122px;
+}
 
-		#wasteland-map-name {left: 590px;
-								/*bottom: -107px;*/
-								bottom: -30px;
-								padding: 2em;
-								margin: -2em;
-   		}
+#coal-map-name {
+  left: 812px;
+	bottom: 147px;
+	padding: 2em;
+	margin: -2em;
+}
 
-			.USA-wasteland {background-position: 0px -1122px;
-			}
+.USA-coal {
+  background-position: -1980px -1122px;
+}
 
-		#sacred-map-name {left: 659px;
-							/*bottom: 12px;*/
-							bottom: 89px;
-   							padding: 2em;
-							margin: -2em;
-   		}
+#burial-map-name {
+  left: 615px;
+	bottom: 185px;
+	padding: 2em;
+	margin: -2em;
+}
 
-			.USA-sacred {background-position: -990px -1122px;
-			}
+.USA-burial {
+  background-position: 0px -1683px;
+}
 
-		#coal-map-name {left: 812px;
-						/*bottom: 70px;*/
-						bottom: 147px;
-						padding: 2em;
-						margin: -2em;
-   		}
+#fishermans-map-name {
+  left: 700px;
+	bottom: 247px;
+	padding: 2em;
+	margin: -2em;
+}
 
-			.USA-coal {background-position: -1980px -1122px;
-   			}
+.USA-fishermans {
+  background-position: -990px -1683px;
+}
 
-		#burial-map-name {left: 615px;
-							/*bottom: 108px;*/
-							bottom: 185px;
-							padding: 2em;
-							margin: -2em;
-   		}
+#borderlands-map-name {
+  left: 471px;
+	bottom: 302px;
+	padding: 2em;
+	margin: -2em;
+}
 
-			.USA-burial {background-position: 0px -1683px;
-			}
+.USA-borderlands {
+  background-position: -1980px -1683px;
+}
 
-		#fishermans-map-name {left: 700px;
-   								/*bottom: 170px;*/
-   								bottom: 247px;
-								padding: 2em;
-								margin: -2em;
-   		}
+#valley-map-name {
+  left: 425px;
+	bottom: 120px;
+	padding: 2em;
+	margin: -2em;
+}
 
-			.USA-fishermans {background-position: -990px -1683px;
-			}
+.USA-valley {
+  background-position: 0px -2244px;
+}
 
-		#borderlands-map-name {left: 471px;
-								/*bottom: 225px;*/
-								bottom: 302px;
-								padding: 2em;
-								margin: -2em;
-   		}
+#ruins-map-name {
+  left: 349px;
+	bottom: 167px;
+	padding: 2em;
+	margin: -2em;
+}
 
-			.USA-borderlands {background-position: -1980px -1683px;
-			}
+.USA-ruins {
+  background-position: -990px -2244px;
+}
 
-		#valley-map-name {left: 425px;
-							/*bottom: 43px;*/
-							bottom: 120px;
-							padding: 2em;
-							margin: -2em;
-   		}
+#uncharted-map-name {
+  left: 297px;
+	bottom: 277px;
+	padding: 2em;
+	margin: -2em;
+}
 
-			.USA-valley {background-position: 0px -2244px;
-			}
-
-		#ruins-map-name {left: 349px;
-							/*bottom: 90px;*/
-							bottom: 167px;
-							padding: 2em;
-							margin: -2em;
-   		}
-
-			.USA-ruins {background-position: -990px -2244px;
-			}
-
-		#uncharted-map-name {left: 297px;
-								/*bottom: 200px;*/
-								bottom: 277px;
-								padding: 2em;
-								margin: -2em;
-   		}
-
-			.USA-uncharted {background-position: -1980px -2244px;
-			}
+.USA-uncharted {
+  background-position: -1980px -2244px;
+}
 
 
 /*----------------------------------------*/
-/*--------------------contents--------------------*/
+/*--------------------Contents--------------------*/
 /*----------------------------------------*/
+#main-contents {
+  font-size: 18pt;
+	font-family: alegreya;
+	clear: both;
+}
 
-		#main-contents {font-size: 18pt;
-						font-family: alegreya;
-						clear: both;
-		}
+#contents {
+  font-size: 14pt;
+	font-family: alegreya;
+	clear: both;
+}
 
-		#contents {font-size: 14pt;
-					font-family: alegreya;
-					clear: both;
-		}
+.ToC-title-main {
+  font-size: 14pt;
+	font-family: lato;
+}
 
-		.ToC-title-main {font-size: 14pt;
-							font-family: lato;
-		}
+.ToC-title-main:hover {
+  text-decoration: underline;
+	cursor: pointer;
+}
 
-		.ToC-title-main:hover {text-decoration: underline;
-								cursor: pointer;
-		}
+.ToC-title {
+  font-size: 12pt;
+	font-family: lato;
+}
 
-		.ToC-title {font-size: 12pt;
-					font-family: lato;
-		}
-
-		.ToC-title:hover {text-decoration: underline;
-							cursor: pointer;
-		}
-
-
-/*----------------------------------------*/
-/*--------------------about--------------------*/
-/*----------------------------------------*/
-
-	/*turn image into checkbox so you can change back and forth with each click*/
-		#about-1/*input[type="checkbox"]*/ {background-image: url('images/sprite-maps/Bamboo_Forest_s-map.jpg');
-											display: block;
-											height: 400px;
-											width: 527.6px;
-											background-size: 1055.2px 400px;
-											margin: auto;
-											background-repeat: no-repeat;
-											cursor:pointer;
-		}
-
-		#about-1/*input[type="checkbox"]*/:checked {background-position: -527.6px;
-		}
-
-		.native-hidden {-webkit-appearance: none;
-						-moz-appearance: none;
-						appearance: none;
-		}
-
-
-		#about-cap {text-align: center;
-		}
-
-		#about-txt {margin: 0 150px;
-					font-size: 18px;
-					font-weight: bold;
-		}
-
-/*----------------------------------------*/
-/*--------------------bestiary--------------------*/
-/*----------------------------------------*/
-
-   		table, th, td {border: 5px solid black;
-						font-family: alegreya;
-						padding: 5px;
-						/*background-color: #D6CCA9 = rgb(214, 204, 169);*/
-						vertical-align: middle;
-						background-color: rgba(255, 255, 255, .5);
-		}
-
-		th {font-family: lato;
-		}
-
-		table {
-				width: 50%;
-				clear: both;
-		}
-
-		td img {display: block;
-				margin-left: auto;
-				margin-right: auto;
-		}
-
-		#bestiary {clear: both;
-		}
-
-		.bestiary-img {	margin: 10px;
-						height: 236px;
-						width: 200px;
-						background-size: 400px 236px;
-						background-repeat: no-repeat;
-						background-position: 0px 0px;
-		}
-
-		.bestiary-img:hover {background-position: -200px 0px;
-								cursor: pointer;
-		}
-
-		.bestiary-name:hover, .name:hover {text-decoration: underline;
-											cursor: pointer;
-		}
-
-		.bestiary-txt {vertical-align: text-top;
-						padding: 10px;
-		}
-
-		#pearasite {background-image: url("images/sprite-maps/Pearasite_s-map.png");
-		}
-
-		#moonfly {background-image: url("images/sprite-maps/Moonfly_s-map.png");
-		}
-
-		#weaver {background-image: url("images/sprite-maps/Weaver_s-map.png");
-		}
-
-		#wafflesnake {background-image: url("images/sprite-maps/Wafflesnake_s-map.png");
-		}
-
-		#royal_façade {background-image: url("images/sprite-maps/Royal_Facade_s-map.png");
-		}
+.ToC-title:hover {
+  text-decoration: underline;
+	cursor: pointer;
+}
 
 
 /*----------------------------------------*/
-/*--------------------shops--------------------*/
+/*--------------------About--------------------*/
 /*----------------------------------------*/
+/*turn image into checkbox so you can change back and forth with each click*/
+#about-1 {
+  background-image: url('images/sprite-maps/Bamboo_Forest_s-map.jpg');
+	display: block;
+	height: 400px;
+	width: 527.6px;
+	background-size: 1055.2px 400px;
+	margin: auto;
+	background-repeat: no-repeat;
+	cursor:pointer;
+}
 
-		.shops-img {height: 250px;
-					width: 300px;
-					background-size: 600px 250px;
-					background-repeat: no-repeat;
-					background-position: 0px 0px;
-					float: left;
-					margin: 20px 20px 50px 20px;
-					/* 4 values = top right bottom left*/
-		}
+#about-1:checked {
+  background-position: -527.6px;
+}
 
-		.shops-img:hover {background-position: -300px 0px;
-							cursor: pointer;
-		}
+.native-hidden {
+  -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
 
-		#bamboo-hut {background-image: url("images/sprite-maps/Bamboo_Hut_s-map.jpg");
-		}
+#about-cap {
+  text-align: center;
+}
 
-		#sugar-cane {background-image: url("images/sprite-maps/Sugar_Cane_s-map.jpg");
-		}
-
-		.shop-txt {margin: 20px 0px 0px 0px;
-		}
-
-/*----------------------------------------*/
-/*--------------------people--------------------*/
-/*----------------------------------------*/
-
-		.people-img {height: 236px;
-						width: 200px;
-						background-size: 400px 236px;
-						background-repeat: no-repeat;
-						background-position: 0px 0px;
-						float: left;
-						margin: 0px 35px 20px 35px;
-		}
-
-		.people-img:hover {background-position: -200px 0px;
-								cursor: pointer;
-		}
-
-		#cambodian-dude {background-image: url("images/sprite-maps/Cambodian_Dude_s-map.png");
-		}
-
-		#phil {background-image: url("images/sprite-maps/Phil_s-map.png");
-		}
-
-		#sugar-cane-owner {background-image: url("images/sprite-maps/Sugar_Cane_Owner_s-map.png");
-		}
-
-		li.name {clear: both;
-					font-size: 18pt;
-					margin: 0 50px;
-		}
-
-   		.people-txt {margin: 10px 0px 0px 0px;
-   		}
+#about-txt {
+  margin: 0 150px;
+	font-size: 18px;
+	font-weight: bold;
+}
 
 /*----------------------------------------*/
-/*--------------------gallery--------------------*/
+/*--------------------Bestiary--------------------*/
 /*----------------------------------------*/
 
-		.gallery {
-		}
+table, th, td {
+  border: 5px solid black;
+	font-family: alegreya;
+	padding: 5px;
+	vertical-align: middle;
+	background-color: rgba(255, 255, 255, .5);
+}
 
-		.gallery:hover {cursor: pointer;
-		}
+th {
+  font-family: lato;
+}
 
-		.gallery figcaption{text-align: center;
-							margin-top: 260px;
-		}
+table {
+	width: 50%;
+	clear: both;
+}
 
-		#gallery-grid {margin: 20px;
-						display: inline-block;
-		}
+td img {
+  display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 
-		/* 2493â€†Ã—â€†1000 ==> 1246.5 x 500 ==> 623.25 x 250 */
-		#cave-painting {background-image: url("images/sprite-maps/Cave_Painting_s-map.jpg");
-						height: 250px;
-						width: 311.75px;
-						background size: 623.25px 250px;
-						background-repeat: no-repeat;
-						background-position: 0px 0px;
-						margin: auto;
-						display: inline-block;
-		}
+#bestiary {
+  clear: both;
+}
 
-		#cave-painting:hover {background-position: -311.75px 0px;
-		}
+.bestiary-img {
+  margin: 10px;
+	height: 236px;
+	width: 200px;
+	background-size: 400px 236px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
 
+.bestiary-img:hover {
+  background-position: -200px 0px;
+	cursor: pointer;
+}
 
-		/* 750â€†Ã—â€†250 */
-		#bird-watch {background-image: url("images/sprite-maps/Bird_Watch_s-map.png");
-					height: 250px;
-					width: 375px;
-					background size: 750px 250px;
-					background-repeat: no-repeat;
-					background-position: 0px 0px;
-					margin: auto;
-					display: inline-block;
-		}
+.bestiary-name:hover, .name:hover {
+  text-decoration: underline;
+	cursor: pointer;
+}
 
-		#bird-watch:hover {background-position: -375px 0px;
-		}
+.bestiary-txt {
+  vertical-align: text-top;
+	padding: 10px;
+}
 
-		/* 750â€†Ã—â€†250 */
-		#snowy-border {background-image: url("images/sprite-maps/Snowy_Border_s-map.png");
-					height: 250px;
-					width: 375px;
-					background size: 750px 250px;
-					background-repeat: no-repeat;
-					background-position: 0px 0px;
-					margin: auto;
-					display: inline-block;
-		}
+#pearasite {
+  background-image: url("images/sprite-maps/Pearasite_s-map.png");
+}
 
-		#snowy-border:hover {background-position: -375px 0px;
-		}
+#moonfly {
+  background-image: url("images/sprite-maps/Moonfly_s-map.png");
+}
+
+#weaver {
+  background-image: url("images/sprite-maps/Weaver_s-map.png");
+}
+
+#wafflesnake {
+  background-image: url("images/sprite-maps/Wafflesnake_s-map.png");
+}
+
+#royal_façade {
+  background-image: url("images/sprite-maps/Royal_Facade_s-map.png");
+}
 
 
 /*----------------------------------------*/
-/*--------------------misc--------------------*/
+/*--------------------Shops--------------------*/
+/*----------------------------------------*/
+.shops-img {
+  height: 250px;
+	width: 300px;
+	background-size: 600px 250px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	float: left;
+	margin: 20px 20px 50px 20px;
+}
+
+.shops-img:hover {
+  background-position: -300px 0px;
+cursor: pointer;
+}
+
+#bamboo-hut {
+  background-image: url("images/sprite-maps/Bamboo_Hut_s-map.jpg");
+}
+
+#sugar-cane {
+  background-image: url("images/sprite-maps/Sugar_Cane_s-map.jpg");
+}
+
+.shop-txt {
+  margin: 20px 0px 0px 0px;
+}
+
+/*----------------------------------------*/
+/*--------------------People--------------------*/
 /*----------------------------------------*/
 
-		#misc-txt {margin: 0 150px;
-		}
+.people-img {
+  height: 236px;
+	width: 200px;
+	background-size: 400px 236px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	float: left;
+	margin: 0px 35px 20px 35px;
+}
+
+.people-img:hover {
+  background-position: -200px 0px;
+	cursor: pointer;
+}
+
+#cambodian-dude {
+  background-image: url("images/sprite-maps/Cambodian_Dude_s-map.png");
+}
+
+#phil {
+  background-image: url("images/sprite-maps/Phil_s-map.png");
+}
+
+#sugar-cane-owner {
+  background-image: url("images/sprite-maps/Sugar_Cane_Owner_s-map.png");
+}
+
+li.name {
+  clear: both;
+  font-size: 18pt;
+	margin: 0 50px;
+}
+
+.people-txt {
+  margin: 10px 0px 0px 0px;
+}
+
+/*----------------------------------------*/
+/*--------------------Gallery--------------------*/
+/*----------------------------------------*/
+.gallery {
+}
+
+.gallery:hover {
+  cursor: pointer;
+}
+
+.gallery figcaption{
+  text-align: center;
+	margin-top: 260px;
+}
+
+#gallery-grid {
+  margin: 20px;
+	display: inline-block;
+}
+
+#cave-painting {
+  background-image: url("images/sprite-maps/Cave_Painting_s-map.jpg");
+	height: 250px;
+	width: 311.75px;
+	background size: 623.25px 250px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	margin: auto;
+	display: inline-block;
+}
+
+#cave-painting:hover {
+  background-position: -311.75px 0px;
+}
+
+
+#bird-watch {
+  background-image: url("images/sprite-maps/Bird_Watch_s-map.png");
+	height: 250px;
+	width: 375px;
+	background size: 750px 250px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	margin: auto;
+	display: inline-block;
+}
+
+#bird-watch:hover {
+  background-position: -375px 0px;
+}
+
+#snowy-border {
+  background-image: url("images/sprite-maps/Snowy_Border_s-map.png");
+	height: 250px;
+	width: 375px;
+	background size: 750px 250px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	margin: auto;
+	display: inline-block;
+}
+
+#snowy-border:hover {
+  background-position: -375px 0px;
+}
+
+
+/*----------------------------------------*/
+/*--------------------Misc--------------------*/
+/*----------------------------------------*/
+
+#misc-txt {
+  margin: 0 150px;
+}
 
 
 /*----------------------------------------*/
 /*--------------------FOOTER--------------------*/
 /*----------------------------------------*/
+/*	Main box */
+footer {
+	margin: 50px auto;
+	border-top: solid 8px #704214;
+	padding: 20px 100px;
+	width: 800px;
+}
 
-	/*	Main box */
-		footer {
-			margin: 50px auto;
-			border-top: solid 8px #704214;
-			padding: 20px 100px;
-			width: 800px;
-			}
+/*	Social media icons box */
+#social-set {
+	float: right;
+	border: solid 1px #704214;
+	padding: 5px;
+	background-color: rgba(214, 204, 169, 0.5);
+}
 
-	/*	Social media icons box */
-		#social-set {
-			float: right;
-			border: solid 1px #704214;
-			padding: 5px;
-			background-color: rgba(214, 204, 169, 0.5);
-			}
+.social-icon {
+	display: block;
+	float: right;
+	margin: 5px;
+	width: 20px;
+	height: 20px;
+}
 
-	/*	If you want links for social media icons; we have lots of old ones;
-		they open in Illustrator (vector-based and scalable) */
-		.social-icon {
-			display: block;
-			float: right;
-			margin: 5px;
-			width: 20px;
-			height: 20px;
-			}
+.social-icon:hover {
+	margin: 0;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
 
-	/*	Social media icons on hover; note the margin/size trick here */
-		.social-icon:hover {
-			margin: 0;
-			width: 30px;
-			height: 30px;
-			cursor: pointer;
-			}
-
-	/*	Extra box in footer */
-		#foot-note {
-			margin: 0 0px;
-			padding: 0px;
-			position: relative;
-				left: -200px;
-			color: #704214;
-			font-size: 14px;
-			}
+/*	Extra box in footer */
+#foot-note {
+	margin: 0 0px;
+	padding: 0px;
+	position: relative;
+		left: -200px;
+	color: #704214;
+	font-size: 14px;
+}
