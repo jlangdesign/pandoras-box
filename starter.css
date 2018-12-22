@@ -76,14 +76,14 @@ strong, b {
 	margin: -12px -8px 0 0;
 	padding: 0 5px;
 	width: min-content;
-	background-color: white;
+	background-color: var(--primary-text-color);
 	color: #704214;
 }
 
 /* Inventory item caption change on item box hover */
 .item:hover figcaption {
 	background-color: #704214;
-	color: white;
+	color: var(--primary-text-color);
 }
 
 
@@ -173,6 +173,7 @@ article p {
 :root {
   --primary-typeface: alegreya;
   --secondary-typeface: lato;
+  --primary-text-color: white;
 }
 
 body {
@@ -191,7 +192,7 @@ h1 {
 }
 
 h1, h2, h3, h4, h5, h6, ol, ul, p {
-  color: white;
+  color: var(--primary-text-color);
 	padding-left: 200px;
 	padding-right: 200px;
 }
@@ -213,7 +214,7 @@ ol, li {
 }
 
 figcaption {
-  color: white;
+  color: var(--primary-text-color);
 }
 
 .section-name {
@@ -225,7 +226,7 @@ hr {
   width: 75%;
 }
 
-.interactive {
+.interactive:hover {
   cursor: pointer;
 }
 
@@ -244,7 +245,7 @@ header {
 	margin: 25px;
 	text-align: center;
 	font-size: 3rem;
-	color: #0be;
+	color: var(--primary-text-color);
 }
 
 
@@ -258,6 +259,18 @@ header {
 	left: 30px;
 	background-color: rgba(0,0,0,0.5);
 	width: 100%;
+}
+
+/* Game name */
+#game-name {
+  font-size: 24pt;
+  padding-left: 0px;
+}
+
+/* Game tagline */
+#game-tagline {
+  font-size: 14pt;
+  padding-left: 0px;
 }
 
 /* Heart emblem */
@@ -357,10 +370,24 @@ header {
 		right: 50px;
 }
 
+#search-bar-label {
+  color: var(--primary-text-color);
+}
+
+#linear-nav {
+  color: var(--primary-text-color);
+}
+
 
 /*----------------------------------------*/
 /*-------------------- EL MAPA --------------------*/
 /*----------------------------------------*/
+#map-caption {
+  font-family: var(--primary-typeface);
+  color: var(--primary-text-color);
+  font-size:18pt;
+}
+
 #USA-map {
   background-image: url("images/USA_map-lightened.png");
 	height: 561px;
@@ -767,6 +794,7 @@ li.name {
 /*-------------------- Gallery --------------------*/
 /*----------------------------------------*/
 .gallery {
+  text-align: center;
 }
 
 .gallery:hover {
@@ -869,6 +897,15 @@ footer {
 	margin: 0;
 	width: 30px;
 	height: 30px;
+}
+
+#copyright {
+  font-size: 12pt;
+}
+
+#to-top-button {
+  font-size: 10pt;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 /* Extra box in footer */

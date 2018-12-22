@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<title>Pandora's Box - Bamboo Forest</title>
 
@@ -32,8 +32,8 @@
   	<figure id="logo">
     	<a class="interactive" href="./">
     		<figure id="heart"></figure>
-    		<h1 style="font-size: 24pt; padding-left: 0px;">Pandora's Box</h1>
-    		<h2 style="font-size: 14pt; padding-left: 0px;">An augmented reality RPG</h2>
+    		<h1 id="game-name">Pandora's Box</h1>
+    		<h2 id="game-tagline">An augmented reality RPG</h2>
     	</a>
   	</figure>
 
@@ -51,7 +51,7 @@
     </nav>
 
   	<nav id="search-bar">
-  		<form style="color:white">
+  		<form id="search-bar-label">
   			Search: <input type="text" name="search">
   			<input class="interactive" type="button" onclick="alert('No results found.')" value="Go!">
   		</form>
@@ -166,7 +166,7 @@
 
   	<header>
   		<aside>
-    		<h3 style="color:white">
+    		<h3 id="linear-nav">
     			<span class="interactive nav-3"> World Map</span>
     			<span> > </span>
     			<span class="interactive nav-3"> North America</span>
@@ -179,11 +179,11 @@
     </header>
 
   	<a href="./">
-  		<h1 id="site-title"><font color="#ffffff">BAMBOO FOREST</font></h1>
+  		<h1 id="site-title">BAMBOO FOREST</h1>
   	</a>
 
   	<div align="center">
-  		<h2 style="font-family: alegreya; color: white; font-size:18pt;">Click on any of the locations to learn more about them.</h2>
+  		<h2 id="map-caption">Click on any of the locations to learn more about them.</h2>
   	</div>
 
 
@@ -194,7 +194,7 @@
   	<!--||||||||||||||||||||||||||||||||||||||||-->
 
 		<div id="USA-map">
-			<div id="USA_s-map" class="USA-empty"> <!--position:absolute; move with margin-left and margin-top-->
+			<div id="USA_s-map" class="USA-empty">
 				<div class="interactive map-name" id="sinkhole-map-name" onmouseover="shift('USA_s-map','USA-sinkhole');" onmouseout="shift('USA_s-map','USA-empty');">THE<br>SINKHOLE</div>
 				<div class="interactive map-name" id="foxes-map-name" onmouseover="shift('USA_s-map','USA-foxes');" onmouseout="shift('USA_s-map','USA-empty');">FOXES' DEN</div>
 				<div class="interactive map-name" id="bamboo-map-name" onmouseover="shift('USA_s-map','USA-bamboo');" onmouseout="shift('USA_s-map','USA-empty');">BAMBOO FOREST</div>
@@ -308,7 +308,7 @@
 					<th>Info</th>
 				</tr>
 				<tr>
-					<td class="bestiary-name">001: Pearasite</td>
+					<td class="interactive bestiary-name">001: Pearasite</td>
 					<td>
 						<figure class="interactive bestiary-img" id="pearasite"></figure>
 					</td>
@@ -329,7 +329,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="bestiary-name">002: Moonfly</td>
+					<td class="interactive bestiary-name">002: Moonfly</td>
 					<td>
 						<figure class="interactive bestiary-img" id="moonfly"></figure>
 					</td>
@@ -445,7 +445,7 @@
 		<h5 class="section-name" id="shops"> Shops </h5>
 		<hr>
 		<ul>
-			<li class="name">Bamboo Hut</li>
+			<li class="interactive name">Bamboo Hut</li>
 				<figure class="interactive shops-img" id="bamboo-hut"></figure>
 				<p class="shop-txt">
 					Phil's humble fashion store and house made from natural materials.
@@ -453,7 +453,7 @@
 					If you bring enemy drops to Phil here, he'll gladly take them off your hands and pay you well.
 					This is the only place where you can obtain a Beefy Shield.
 				</p>
-			<li class="name">The Sugar Cane</li>
+			<li class="interactive name">The Sugar Cane</li>
 				<figure class="interactive shops-img" id="sugar-cane"></figure>
 				<p class="shop-txt">
 					A sweet smelling underground potion brewery. Though no one has ever been inside,
@@ -495,7 +495,7 @@
 		<h5 class="section-name" id="people"> People </h5>
 		<hr>
 		<ul>
-			<li class="name">Cambodian Dude</li>
+			<li class="interactive name">Cambodian Dude</li>
 				<figure class="interactive people-img" id="cambodian-dude"></figure>
 				<p class="people-txt">
 					You see him everywhere, from the scenic mountains of China to a refugee camp.
@@ -503,14 +503,14 @@
 					Poor dude keeps ending up in misadventures.
 				</p>
 				<br>
-			<li class="name">Phil</li>
+			<li class="interactive name">Phil</li>
 				<figure class="interactive people-img" id="phil"></figure>
 				<p class="people-txt">
 					He's well known in America as a model and for his fashion line derived from monster parts.
 					You always see him wearing a Weaver skin on his back. Some say it's from his beloved deceased
 					buddy, Steve. Currently, you can find him in the Bamboo Hut selling his wares.
 				</p>
-			<li class="name">Sugar Cane Owner</li>
+			<li class="interactive name">Sugar Cane Owner</li>
 				<figure class="interactive people-img" id="sugar-cane-owner"></figure>
 				<p class="people-txt">
 					She runs The Sugar Cane, a potion brewery. Not much else is known about her.
@@ -551,7 +551,7 @@
 		<hr>
 		<br>
 
-		<div style="text-align:center">
+		<div class="gallery">
 			<div id="gallery-grid">
 				<figure class="interactive gallery" id="cave-painting">
 					<figcaption>A damaged painting discovered in one of the caves. Hover to see the reconstructed painting.</figcaption>
@@ -626,10 +626,10 @@
   			<div class="floatweight">&nbsp;</div>
   		</nav>
   		<aside id="foot-note">
-  			<h3 style="font-size:12pt">©2017 Doki-doki<3</h3>
+  			<h3 id="copyright">©2017 Doki-doki<3</h3>
   			<br>
   			<a href="#site-title">
-  				<h3 style="font-size:10pt; color: rgba(255, 255, 255, 0.75);">Click <b>here</b> to go back up.</h3>
+  				<h3 id="to-top-button">Click <b>here</b> to go back up.</h3>
   			</a>
   		</aside>
   		<div class="floatweight">&nbsp;</div>
