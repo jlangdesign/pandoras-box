@@ -162,6 +162,8 @@ article p {
   --secondary-typeface: lato;
   --primary-text-color: white;
   --smooth-transition: .25s ease-in-out;
+
+	--default-vw: 1425;
 }
 
 body {
@@ -176,7 +178,7 @@ body {
 }
 
 main {
-  padding: 0 15vw;
+  padding: 20vh 15vw 0 15vw;
   box-sizing: border-box;
 }
 
@@ -227,7 +229,6 @@ hr {
 
 /* Header box */
 header {
-	margin-top: 15vh;
 }
 
 /* Title in header */
@@ -245,7 +246,7 @@ header {
 #topnav {
   position: fixed;
     top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
 	width: 100%;
   height: 12.5vh;
   display: flex;
@@ -314,7 +315,7 @@ header {
 }
 
 #primary_nav_wrap ul li:hover {
-	background: #f6f6f6;
+	background: #f4f4f4;
 }
 
 #primary_nav_wrap ul ul {
@@ -372,7 +373,7 @@ header {
 	height: 561px;
 	width: 990px;
 	background-size: 990px 561px;
-	margin: auto;
+	margin: 0;
 }
 
 #USA_s-map {
@@ -380,7 +381,8 @@ header {
   height: 561px;
   width: 990px;
   background-size: 2970px 2805px;
-  margin: auto;
+  margin: 0;
+	position: relative;
 }
 
 /* Map labels - general */
@@ -394,6 +396,8 @@ header {
 	text-shadow: 0px 1px 2px rgba(0, 0, 0, .25);
   transition: var(--smooth-transition);
   transform: scale(1);
+	padding: 1em;
+	margin: -1em;
 }
 
 .map-name:hover {
@@ -402,10 +406,8 @@ header {
 }
 
 #sinkhole-map-name {
-  left: 980px;
-	bottom: 242px;
-	padding: 2em;
-	margin: -2em;
+  left: 760px;
+	top: 135px;
 }
 
 .USA-sinkhole {
@@ -413,10 +415,8 @@ header {
 }
 
 #foxes-map-name {
-  left: 935px;
-	bottom: 191px;
-	padding: 2em;
-	margin: -2em;
+	left: 715px;
+  top: 205px;
 }
 
 .USA-foxes {
@@ -424,10 +424,8 @@ header {
 }
 
 #bamboo-map-name {
-  left: 857px;
-	bottom: 79px;
-	padding: 2em;
-	margin: -2em;
+	left: 655px;
+	top: 320px;
 }
 
 .USA-bamboo {
@@ -435,10 +433,8 @@ header {
 }
 
 #caves-map-name {
-  left: 780px;
-	bottom: 1px;
-	padding: 2em;
-	margin: -2em;
+	left: 565px;
+  top: 375px;
 }
 
 .USA-caves {
@@ -446,10 +442,8 @@ header {
 }
 
 #global-map-name {
-  left: 975px;
-	bottom: -73px;
-	padding: 2em;
-	margin: -2em;
+	left: 755px;
+  top: 435px;
 }
 
 .USA-global {
@@ -457,10 +451,8 @@ header {
 }
 
 #wasteland-map-name {
-  left: 590px;
-	bottom: -30px;
-	padding: 2em;
-	margin: -2em;
+	left: 365px;
+	top: 410px;
 }
 
 .USA-wasteland {
@@ -468,10 +460,8 @@ header {
 }
 
 #sacred-map-name {
-  left: 659px;
-	bottom: 89px;
-	padding: 2em;
-	margin: -2em;
+	left: 435px;
+  top: 310px;
 }
 
 .USA-sacred {
@@ -479,10 +469,8 @@ header {
 }
 
 #coal-map-name {
-  left: 812px;
-	bottom: 147px;
-	padding: 2em;
-	margin: -2em;
+	left: 595px;
+	top: 250px;
 }
 
 .USA-coal {
@@ -490,10 +478,8 @@ header {
 }
 
 #burial-map-name {
-  left: 615px;
-	bottom: 185px;
-	padding: 2em;
-	margin: -2em;
+  left: 395px;
+  top: 210px;
 }
 
 .USA-burial {
@@ -501,10 +487,8 @@ header {
 }
 
 #fishermans-map-name {
-  left: 700px;
-	bottom: 247px;
-	padding: 2em;
-	margin: -2em;
+	left: 480px;
+	top: 130px;
 }
 
 .USA-fishermans {
@@ -512,10 +496,8 @@ header {
 }
 
 #borderlands-map-name {
-  left: 471px;
-	bottom: 302px;
-	padding: 2em;
-	margin: -2em;
+	left: 255px;
+  top: 95px;
 }
 
 .USA-borderlands {
@@ -523,10 +505,8 @@ header {
 }
 
 #valley-map-name {
-  left: 425px;
-	bottom: 120px;
-	padding: 2em;
-	margin: -2em;
+	left: 210px;
+	top: 265px;
 }
 
 .USA-valley {
@@ -534,10 +514,8 @@ header {
 }
 
 #ruins-map-name {
-  left: 349px;
-	bottom: 167px;
-	padding: 2em;
-	margin: -2em;
+	left: 130px;
+	top: 205px;
 }
 
 .USA-ruins {
@@ -545,10 +523,8 @@ header {
 }
 
 #uncharted-map-name {
-  left: 297px;
-	bottom: 277px;
-	padding: 2em;
-	margin: -2em;
+	left: 85px;
+  top: 85px;
 }
 
 .USA-uncharted {
@@ -559,33 +535,26 @@ header {
 /*----------------------------------------*/
 /*-------------------- Contents --------------------*/
 /*----------------------------------------*/
-#main-contents {
-  font-size: 18pt;
-	font-family: var(--primary-typeface);
-	clear: both;
-}
-
 #contents {
+	position: fixed;
+		left: 50%;
+		top: 12.5vh;
+		transform: translate(-50%, 0);
   font-size: 14pt;
 	font-family: var(--primary-typeface);
-	clear: both;
+	text-align: center;
+	background-color: rgba(0, 0, 0, .5);
+	padding: 5px;
+	box-sizing: border-box;
+	width: 100%;
 }
 
 .ToC-title-main {
-  font-size: 14pt;
-	font-family: var(--secondary-typeface);
-}
-
-.ToC-title-main:hover {
-  text-decoration: underline;
-}
-
-.ToC-title {
   font-size: 12pt;
 	font-family: var(--secondary-typeface);
 }
 
-.ToC-title:hover {
+.ToC-title-main:hover {
   text-decoration: underline;
 }
 
