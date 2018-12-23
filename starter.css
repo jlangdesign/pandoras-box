@@ -175,14 +175,17 @@ body {
 	line-height: 1.4;
 }
 
+main {
+  padding: 0 15vw;
+  box-sizing: border-box;
+}
+
 h1 {
   font-weight: bold;
 }
 
 h1, h2, h3, h4, h5, h6, ol, ul, p {
   color: var(--primary-text-color);
-	padding-left: 15vw;
-	padding-right: 15vw;
 }
 
 h5 {
@@ -211,7 +214,6 @@ figcaption {
 }
 
 hr {
-  width: 75%;
 }
 
 .interactive:hover {
@@ -242,51 +244,35 @@ header {
 /*----------------------------------------*/
 #topnav {
   position: fixed;
+    top: 0;
   background-color: rgba(0, 0, 0, 0.5);
 	width: 100%;
   height: 12.5vh;
   display: flex;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
 }
 
 /* Logo */
 #logo {
-  position: absolute;
-	left: 30px;
-}
-
-/* Game name */
-#game-name {
-  display: inline-block;
-  font-size: 36px;
-  padding: 0px;
-}
-
-/* Game tagline */
-#game-tagline {
-  display: block;
-  font-size: 18px;
-  padding: 0px;
-}
-
-/* Heart emblem */
-#heart {
-  float: left;
+	float: left;
   display: inline;
 	background-image: url("images/sprite-maps/Pandora_Box_s-map.png");
-	background-size: 150px 75px;
-	width: 75px;
-	height: 75px;
-	margin: 10px;
+	background-size: 513px 60.75px;
+	width: 256.5px;
+	height: 60.75px;
 }
 
-#heart:hover {
-  background-position: -75px;
+#logo:hover {
+  background-position: -256.5px;
 }
 
 /* New drop-down navigation */
 #primary_nav_wrap {
   position: fixed;
-		top: 13px;
 		left: 50%;
 		transform: translate(-50%, 0);
 	border: 3px groove #704214;
@@ -361,10 +347,6 @@ header {
 
 /* Search bar */
 #search-bar {
-  float: right;
-	position: fixed;
-  	top: 25px;
-		right: 50px;
 }
 
 #search-bar-label {
@@ -382,7 +364,7 @@ header {
 #map-caption {
   font-family: var(--primary-typeface);
   color: var(--primary-text-color);
-  font-size:18pt;
+  font-size: 24px;
 }
 
 #USA-map {
@@ -660,7 +642,6 @@ th {
 }
 
 table {
-	width: 50%;
 	clear: both;
 }
 
@@ -821,7 +802,6 @@ li.name {
   background-position: -311.75px 0px;
 }
 
-
 #bird-watch {
   background-image: url("images/sprite-maps/Bird_Watch_s-map.png");
 	height: 250px;
@@ -867,10 +847,8 @@ li.name {
 /*----------------------------------------*/
 /* Main box */
 footer {
-	margin: 50px auto;
 	border-top: solid 8px #704214;
-	padding: 20px 100px;
-	width: 800px;
+  padding: 5vh 0;
 }
 
 /* Social media icons box */
@@ -908,10 +886,6 @@ footer {
 
 /* Extra box in footer */
 #foot-note {
-	margin: 0 0px;
-	padding: 0px;
-	position: relative;
-		left: -200px;
 	color: #704214;
 	font-size: 14px;
 }
