@@ -575,6 +575,7 @@ header {
 	margin: auto;
 	background-repeat: no-repeat;
 	cursor:pointer;
+	outline: 0;
 }
 
 #about-1:checked {
