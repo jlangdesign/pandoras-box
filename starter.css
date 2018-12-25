@@ -821,11 +821,12 @@ li.name {
 footer {
 	border-top: solid 8px #704214;
   padding: 5vh 0;
+	display: flex;
+	justify-content: space-between;
 }
 
 /* Social media icons box */
 #social-set {
-	float: right;
 	border: solid 1px #704214;
 	padding: 5px;
 	background-color: rgba(214, 204, 169, 0.5);
@@ -848,12 +849,23 @@ footer {
 }
 
 #copyright {
-  font-size: 12pt;
 }
 
 #to-top-button {
-  font-size: 10pt;
-  color: rgba(255, 255, 255, 0.75);
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+  background-color: rgb(214, 204, 169);
+	font-family: var(--secondary-typeface);
+	color: black;
+	border: 3px groove #704214;
+	padding: 10px;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .25);
+}
+
+#to-top-button:hover {
+	background: #f4f4f4;
 }
 
 /* Extra box in footer */
