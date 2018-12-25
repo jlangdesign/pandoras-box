@@ -45,12 +45,6 @@ strong, b {
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
-/* MAIN SECTION CONTAINING INVENTORY */
-#inventory {
-	margin: 25px auto 50px;
-	width: 900px;
-}
-
 /* Inventory item image */
 .item figure {
 	width: 160px;
@@ -166,6 +160,10 @@ article p {
 	--default-vw: 1425;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
   background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -212,7 +210,7 @@ figcaption {
 
 .section-name {
   clear: both;
-	font-size: 28px;
+	font-size: 36px;
 }
 
 hr {
@@ -220,6 +218,11 @@ hr {
 
 .interactive:hover {
   cursor: pointer;
+}
+
+/* Content specific to this location - e.g. About, Bestiary, etc. */
+#specific-content {
+	padding: 0 5vw;
 }
 
 
@@ -562,7 +565,7 @@ header {
 /*----------------------------------------*/
 /*-------------------- About --------------------*/
 /*----------------------------------------*/
-/*turn image into checkbox so you can change back and forth with each click*/
+/* Turn image into checkbox so you can change back and forth with each click */
 #about-1 {
   background-image: url("images/sprite-maps/Bamboo_Forest_s-map.jpg");
 	display: block;
@@ -589,7 +592,7 @@ header {
 }
 
 #about-txt {
-  margin: 0 150px;
+  padding: 0 5.263vw;
 	font-size: 18px;
 	font-weight: bold;
 }
@@ -807,7 +810,7 @@ li.name {
 /*----------------------------------------*/
 
 #misc-txt {
-  margin: 0 150px;
+  padding: 0 5.263vw;
 }
 
 
