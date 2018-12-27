@@ -13,6 +13,9 @@
 		<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
+		<!-- Icon library from Font Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   	<!-- CSS links -->
 		<link rel="stylesheet" type="text/css" href="defaults.css" />
 		<link rel="stylesheet" type="text/css" href="starter.css" />
@@ -139,6 +142,8 @@
     			<input class="interactive" type="button" onclick="alert('No results found.')" value="Go!">
     		</form>
     	</nav>
+
+			<i class="fa fa-search interactive"></i>
     </figure>
 
 		<nav id="contents">
@@ -229,19 +234,21 @@
 
 	  		<form><input class="native-hidden" id="about-1" type="checkbox"/></form>
 
-	  		<figcaption id="about-cap">
-	  				Click the image to switch between day and night.
-	  		</figcaption>
-	  		<br>
-	  			<p id="about-txt">
-	    			Unfortunately, there is no bamboo to be found here - "Bamboo Forest" is a misnomer.
-	    			Most of the trees here merely grow tall and thin like bamboo. It's quite breathtaking in the
-	    			fall, when all the multicolored leaves fall off. However, it's not a very popular tourist
-	    			destination, for it's home to a variety of strange and dangerous creatures. It's said that an
-	    			evil force lurks in the heart of the forest, for it has the power to turn previously inanimate
-	    			objects	into vicious monsters.
-	  			</p>
-	  		<br>
+				<div class="section-content">
+		  		<figcaption id="about-cap">
+		  				Click the image to switch between day and night.
+		  		</figcaption>
+		  		<br>
+		  			<p id="about-txt">
+		    			Unfortunately, there is no bamboo to be found here - "Bamboo Forest" is a misnomer.
+		    			Most of the trees here merely grow tall and thin like bamboo. It's quite breathtaking in the
+		    			fall, when all the multicolored leaves fall off. However, it's not a very popular tourist
+		    			destination, for it's home to a variety of strange and dangerous creatures. It's said that an
+		    			evil force lurks in the heart of the forest, for it has the power to turn previously inanimate
+		    			objects	into vicious monsters.
+		  			</p>
+		  		<br>
+				</div>
 
 	  		<br>
 	  		<br>
@@ -254,10 +261,10 @@
 	  	<!--||||||||||||||||||||||||||||||||||||||||-->
 	    <h5 class="section-name" id="bestiary"> Bestiary </h5>
 	  		<hr>
-	  		<p> 5 different species here: </p>
-	  		<br>
+				<div class="section-content">
+		  		<p> 5 different species here: </p>
+		  		<br>
 
-	  		<div>
 	  			<table>
 	  				<tr>
 	  					<th>Creature</th>
@@ -527,3 +534,4 @@
     </main>
 	</body>
 </html>
+p
