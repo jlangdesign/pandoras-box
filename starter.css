@@ -771,19 +771,25 @@ li.name {
 }
 
 .gallery figcaption{
-  text-align: center;
 }
 
 .gallery-grid {
-  /*margin: 20px;*/
+  /* margin: 20px; */
 	/* display: inline-block; */
+	margin-bottom: 20px;
+}
+
+.gallery-caption {
+	max-width: 375px;
 }
 
 #cave-painting {
   background-image: url("images/sprite-maps/Cave_Painting_s-map.jpg");
 	height: 250px;
-	width: 311.75px;
-	background-size: 623.25px 250px;
+	/* width: 311.75px; */
+	width: 375px;
+	/* background-size: 623.25px 250px; */
+	background-size: 750px 300.842px;
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
 	margin: auto;
@@ -791,7 +797,8 @@ li.name {
 }
 
 #cave-painting:hover {
-  background-position: -311.75px 0px;
+  /* background-position: -311.75px 0px; */
+	background-position: -375px 0px;
 }
 
 #bird-watch {
