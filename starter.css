@@ -391,7 +391,8 @@ header {
 	height: calc(561 / var(--default-vw) * 100vw);
 	width: calc(990 / var(--default-vw) * 100vw);
 	background-size: calc(990 / var(--default-vw) * 100vw) calc(561 / var(--default-vw) * 100vw);
-	margin: 0;
+	margin: auto;
+	display: block;
 }
 
 #USA_s-map {
