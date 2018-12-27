@@ -952,6 +952,10 @@ footer {
 	#search-bar {
 		display: none;
 	}
+
+	#specific-content {
+		padding: 0 2.5vw;
+	}
 }
 
 @media (max-width: 950px) {
@@ -967,5 +971,9 @@ footer {
 	  left: initial;
 		right: 30px;
 		transform: translate(0, 0);
+	}
+
+	#specific-content {
+		padding: 0;
 	}
 }
