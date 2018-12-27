@@ -946,4 +946,24 @@ footer {
 	.fa-search {
 		display: inherit;
 	}
+
+	#search-bar {
+		display: none;
+	}
+}
+
+@media (max-width: 950px) {
+	.fa-search {
+		display: none;
+	}
+
+	main {
+	  padding: 20vh 7.5vw 0 7.5vw;
+	}
+
+	#primary_nav_wrap {
+	  left: initial;
+		right: 30px;
+		transform: translate(0, 0);
+	}
 }
